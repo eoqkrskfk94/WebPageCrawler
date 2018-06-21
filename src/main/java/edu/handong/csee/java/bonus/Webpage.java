@@ -14,8 +14,7 @@ public class Webpage {
 		try {
 			reader.urlRead(args[1], args[3]);
 		} catch (Exception e) {
-			System.out.println("error");
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 	}

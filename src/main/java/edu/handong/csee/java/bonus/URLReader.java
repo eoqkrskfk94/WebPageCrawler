@@ -14,18 +14,18 @@ public class URLReader {
         
         if(path.startsWith("/")) {
         	path = path.concat("/index.html");
-        	System.out.println(path);
+        	//System.out.println(path);
         }
         if(path.startsWith("c:")) {
         	//path = path.replaceAll("\", "d");
         	path = path.concat("\\index.html");
-        	System.out.println(path);
+        	//System.out.println(path);
         }
         
         //System.out.println(path);
         
         
-        File saveFile = new File("/Users/mjkim/index.html");
+        File saveFile = new File(path);
 		BufferedWriter out = new BufferedWriter(new FileWriter(saveFile));
 
         String inputLine;
